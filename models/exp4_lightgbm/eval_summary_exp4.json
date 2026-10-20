@@ -1,0 +1,154 @@
+{
+  "experiment": "Experiment 4: LightGBM Benchmark",
+  "algorithm": "LightGBM (LGBMClassifier 4.7.0)",
+  "training_time_seconds": 3.74,
+  "hyperparameters": {
+    "n_estimators_max": 1000,
+    "learning_rate": 0.05,
+    "num_leaves": 31,
+    "subsample": 0.8,
+    "subsample_freq": 1,
+    "colsample_bytree": 0.8,
+    "early_stopping_rounds": 50,
+    "random_state": 42
+  },
+  "early_stopping_results": {
+    "best_iteration": 260,
+    "total_trees": 260
+  },
+  "metrics": {
+    "roc_auc": 0.7031882275672436,
+    "average_precision": 0.1812375869778569,
+    "brier_score": 0.0707454769742144
+  },
+  "comparisons": {
+    "vs_exp2_xgboost": {
+      "roc_auc_delta": -0.0014497724327563466,
+      "pr_auc_delta": 0.00016158697785692566,
+      "brier_score_delta": 2.5476974214400094e-05
+    },
+    "vs_exp3_tuned_xgboost": {
+      "roc_auc_delta": -0.0018967724327563218,
+      "pr_auc_delta": -2.341302214309282e-05,
+      "brier_score_delta": 4.347697421440422e-05
+    },
+    "vs_baseline": {
+      "roc_auc_delta": 0.028685227567243676,
+      "pr_auc_delta": 0.02119158697785692,
+      "brier_score_delta": -0.0009655230257855918
+    }
+  },
+  "threshold_metrics": {
+    "0.1": {
+      "accuracy": 0.7526828105014417,
+      "precision": 0.16398460731152703,
+      "recall": 0.5034908700322234,
+      "f1_score": 0.2473941153186436,
+      "tp": 1875,
+      "fp": 9559,
+      "fn": 1849,
+      "tn": 32844,
+      "predicted_positives": 11434
+    },
+    "0.2": {
+      "accuracy": 0.8955275652004249,
+      "precision": 0.2572062084257206,
+      "recall": 0.15574650912996776,
+      "f1_score": 0.19401237665161397,
+      "tp": 580,
+      "fp": 1675,
+      "fn": 3144,
+      "tn": 40728,
+      "predicted_positives": 2255
+    }
+  },
+  "ratio_importance": {
+    "CREDIT_INCOME_RATIO": {
+      "gain": 5057.760167598724,
+      "gain_rank": 7,
+      "split_count": 502
+    },
+    "ANNUITY_INCOME_RATIO": {
+      "gain": 4840.8111844062805,
+      "gain_rank": 8,
+      "split_count": 473
+    },
+    "CREDIT_GOODS_RATIO": {
+      "gain": 11380.43448138237,
+      "gain_rank": 3,
+      "split_count": 417
+    },
+    "ANNUITY_CREDIT_RATIO": {
+      "gain": 31647.352440834045,
+      "gain_rank": 1,
+      "split_count": 1346
+    },
+    "INCOME_PER_FAMILY_MEMBER": {
+      "gain": 3814.622155189514,
+      "gain_rank": 10,
+      "split_count": 405
+    }
+  },
+  "top_10_features_by_gain": [
+    {
+      "feature": "ANNUITY_CREDIT_RATIO",
+      "gain": 31647.352440834045,
+      "split_count": 1346,
+      "gain_rank": 1
+    },
+    {
+      "feature": "DAYS_EMPLOYED",
+      "gain": 18033.38034915924,
+      "split_count": 768,
+      "gain_rank": 2
+    },
+    {
+      "feature": "CREDIT_GOODS_RATIO",
+      "gain": 11380.43448138237,
+      "split_count": 417,
+      "gain_rank": 3
+    },
+    {
+      "feature": "AMT_GOODS_PRICE",
+      "gain": 6644.866883516312,
+      "split_count": 416,
+      "gain_rank": 4
+    },
+    {
+      "feature": "AMT_ANNUITY",
+      "gain": 5325.192242145538,
+      "split_count": 441,
+      "gain_rank": 5
+    },
+    {
+      "feature": "AMT_CREDIT",
+      "gain": 5307.469718456268,
+      "split_count": 384,
+      "gain_rank": 6
+    },
+    {
+      "feature": "CREDIT_INCOME_RATIO",
+      "gain": 5057.760167598724,
+      "split_count": 502,
+      "gain_rank": 7
+    },
+    {
+      "feature": "ANNUITY_INCOME_RATIO",
+      "gain": 4840.8111844062805,
+      "split_count": 473,
+      "gain_rank": 8
+    },
+    {
+      "feature": "NAME_EDUCATION_TYPE_Higher_education",
+      "gain": 4041.8477668762207,
+      "split_count": 71,
+      "gain_rank": 9
+    },
+    {
+      "feature": "INCOME_PER_FAMILY_MEMBER",
+      "gain": 3814.622155189514,
+      "split_count": 405,
+      "gain_rank": 10
+    }
+  ]
+}

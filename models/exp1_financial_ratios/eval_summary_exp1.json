@@ -1,0 +1,50 @@
+{
+  "experiment": "Experiment 1: Financial Ratio Feature Engineering",
+  "baseline_metrics": {
+    "roc_auc": 0.674503,
+    "pr_auc": 0.160046,
+    "brier_score": 0.071711
+  },
+  "exp1_metrics": {
+    "roc_auc": 0.7006232275683837,
+    "pr_auc": 0.177911608878567,
+    "brier_score": 0.07089105569709396
+  },
+  "delta": {
+    "roc_auc": 0.026120227568383725,
+    "pr_auc": 0.017865608878567002,
+    "brier_score": -0.0008199443029060366
+  },
+  "ratio_importances": {
+    "CREDIT_INCOME_RATIO": {
+      "gain": 8.017351150512695,
+      "gain_rank": 46,
+      "weight": 196,
+      "weight_rank": 7
+    },
+    "ANNUITY_INCOME_RATIO": {
+      "gain": 8.974832534790039,
+      "gain_rank": 38,
+      "weight": 207,
+      "weight_rank": 5
+    },
+    "CREDIT_GOODS_RATIO": {
+      "gain": 33.78804397583008,
+      "gain_rank": 7,
+      "weight": 291,
+      "weight_rank": 3
+    },
+    "ANNUITY_CREDIT_RATIO": {
+      "gain": 30.57616424560547,
+      "gain_rank": 8,
+      "weight": 831,
+      "weight_rank": 1
+    },
+    "INCOME_PER_FAMILY_MEMBER": {
+      "gain": 7.2565226554870605,
+      "gain_rank": 59,
+      "weight": 177,
+      "weight_rank": 8
+    }
+  }
+}

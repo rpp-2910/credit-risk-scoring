@@ -1,5 +1,31 @@
+# Python
 .venv/
-data/
+venv/
 __pycache__/
-.ipynb_checkpoints/
 *.pyc
+.pytest_cache/
+
+# Secrets
+.env
+.env.*
+
+# Raw datasets
+data/*.csv
+data/*.parquet
+
+# Trained model files
+*.joblib
+*.pkl
+models/**/*.txt
+
+# XGBoost model artifacts
+models/xgboost_model_a.json
+models/**/xgboost_model*.json
+
+# Logs
+*.log
+
+# IDE
+.vscode/Get-Content .gitignore
+git status --short
+git remote -v

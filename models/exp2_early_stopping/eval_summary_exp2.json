@@ -1,0 +1,62 @@
+{
+  "experiment": "Experiment 2: XGBoost Early Stopping ONLY",
+  "early_stopping_details": {
+    "n_estimators_max": 1000,
+    "early_stopping_rounds": 50,
+    "best_iteration": 652,
+    "optimal_number_of_trees": 653,
+    "total_rounds_trained": 703,
+    "best_validation_auc": 0.704637849377994
+  },
+  "metrics_comparison": {
+    "baseline": {
+      "roc_auc": 0.674503,
+      "pr_auc": 0.160046,
+      "brier_score": 0.071711
+    },
+    "experiment_1": {
+      "roc_auc": 0.700623,
+      "pr_auc": 0.177912,
+      "brier_score": 0.070891
+    },
+    "experiment_2": {
+      "roc_auc": 0.704637849377994,
+      "pr_auc": 0.1810760345863331,
+      "brier_score": 0.07072008227722634
+    },
+    "delta_vs_exp1": {
+      "roc_auc": 0.004014849377994012,
+      "pr_auc": 0.003164034586333103,
+      "brier_score": -0.00017091772277365302
+    },
+    "delta_vs_baseline": {
+      "roc_auc": 0.030134849377994044,
+      "pr_auc": 0.021030034586333096,
+      "brier_score": -0.0009909177227736543
+    }
+  },
+  "threshold_metrics": {
+    "0.1": {
+      "accuracy": 0.7466776508335682,
+      "precision": 0.16468705248083565,
+      "recall": 0.5249731471535983,
+      "f1_score": 0.2507213850593139,
+      "tp": 1955,
+      "fp": 9916,
+      "fn": 1769,
+      "tn": 32487,
+      "predicted_positives": 11871
+    },
+    "0.2": {
+      "accuracy": 0.8960045092895701,
+      "precision": 0.2605979473449353,
+      "recall": 0.15682062298603652,
+      "f1_score": 0.1958088851634535,
+      "tp": 584,
+      "fp": 1657,
+      "fn": 3140,
+      "tn": 40746,
+      "predicted_positives": 2241
+    }
+  }
+}
